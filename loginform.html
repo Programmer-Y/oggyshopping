@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" href="styl1.css">
+<link rel="text/javascript" href=" http://code.jquery.com/jquery-1.11.3.min.js">
+</head>
+<body>
+
+	<div class="hero">
+		<div class="formbox">
+		<h1 align="center" class="welcome">oggy.com</h1>
+			<div class="buttonbox">
+				<div id="btn"></div>
+				<button type="button" class="toggle" onclick="login()">User</button>
+				<button type="button" class="toggle" onclick="login1()">Admin</button>
+			</div>
+	<form id="user" class="inputgroup">
+		<input id="h1" type="text" class="field" placeholder="User Id" required><br>
+		<input id="h2" type="password" class="field" placeholder="Password" required><br>
+		
+		<button type="button" class="submitbtn" onclick="check()">Log In</button><br>
+		<h2 align="center" id="demo" class="submitbtn"></h2>
+	</form>
+	<form  id="admin" class="inputgroup">
+		<input id="h3" type="text" class="field" placeholder="Admin Id" required><br>
+		<input id="h4" type="password" class="field" placeholder="Admin Password" required><br>
+		<button type="button" class="submitbtn" onclick="check()">Log In</button><br>
+		<h2 align="center" id="demo1" class="submitbtn" ></h2>
+	</form>
+	</div>
+	</div>		
+<script>
+var x=document.getElementById("user");
+var y=document.getElementById("admin");
+var z=document.getElementById("btn");
+function login1(){
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login(){
+x.style.left="50px";
+y.style.left="550px";
+z.style.left="0px";
+}
+function check()
+{
+var a=document.getElementById("h1").value;
+var b=document.getElementById("h2").value;
+var c=document.getElementById("h3").value;
+var d=document.getElementById("h4").value;
+
+
+if(a=="yogi" && b=="123"){
+var str = "get-in!";
+var result = str.link("file:///C:/Users/user/Desktop/HTML/gallary.html.html");
+document.getElementById("demo").innerHTML = result;
+}
+else if(c=="admin" && d=="admin"){
+var str = "explore!";
+var result = str.link("file:///C:/Users/user/Desktop/HTML/gallary.html.html");
+document.getElementById("demo1").innerHTML = result;
+}
+else{
+alert("invalid user id/password");
+}
+}
+function check1()
+{
+var a=document.getElementById("h1").value;
+var b=document.getElementById("h2").value;
+var c=document.getElementById("h3").value;
+var d=document.getElementById("h4").value;
+
+
+if(a=="yogi" && b=="123"){
+var str = "get-in!";
+var result = str.link("file:///C:/Users/user/Desktop/HTML/gallary.html.html");
+document.getElementById("demo").innerHTML = result;
+}
+else if(c=="admin" && d=="admin"){
+var str = "explore!";
+var result = str.link("file:///C:/Users/user/Desktop/HTML/gallary.html.html");
+document.getElementById("demo1").innerHTML = result;
+}
+else{
+alert("invalid user id/password");
+}
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
