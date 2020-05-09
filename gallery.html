@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Image Gallery</title>
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="bootstrap.css"
+		      />
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="style.css"
+		      />	
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+	<a href='index.html'>home</a><br>
+	<div class='cointainer'>
+	<h1 align='center'> kitty kittens </h1><br>
+	<div class="rows">
+	<div class='col-md-3'>
+	<img class="crop-img" src='a1.jpg'/></div>
+	<div class="row">
+	<div class='col-md-3'>
+	<img class="crop-img" src='a2.jpg'/></div>
+	<div class="row">
+	<div class='col-md-3'>
+	<img class="crop-img" src='a3.jpg'/></div>
+	<div class="row">
+	<div class='col-md-3'>
+	<img class="crop-img" src='a4.jpg'/></div></div>
+	<div class='row'>
+	<div class='col-md-12'>
+	<img id='lp' class='large-img' src='a1.jpg'>
+	</div></div>
+	<script>
+		$(".crop-img").click(function(){
+			$("#lp").attr('src', 
+				$(this).attr('src'));
+		});
+	</script>
+	
