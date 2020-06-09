@@ -1,0 +1,120 @@
+nav{
+	background:#0082e6;
+	width:100%;
+	height:100px;
+	color:#ffffff;
+	opacity:80%;
+	border-radius:2%;
+}	
+
+body{
+	background-image:url(bk.jpg);
+	background-size:cover;
+}
+nav ul{
+	float:right;
+	margin-right: 60px;
+}
+nav ul li{
+	display:inline-block;
+	font-size:25px;
+	margin-right:15px;
+	margin-top:20%;
+	padding:10px;
+
+}
+h1{
+	display:inline;
+	color: #f2f2f2;
+  font-size: 75px;
+  line-height: 80px;
+  margin-left:50%;
+
+}
+nav ul li:hover,active{
+	background:#4facf3d9;
+}
+.logbox{
+	width:40%;
+	height:50%;
+	background:linear-gradient(to left,#0082e6,#fff);
+	margin-left:30%;
+	opacity:80%;
+	border-radius:4%;
+	position:absolute;
+	overflow:hidden;
+	display:none;
+
+}
+div{
+	font-size:40px;
+}
+
+.toggle{
+padding:10px 50px;
+cursor:pointer;
+background:transparent;
+border:0;
+outline:none;
+position:relative;
+}
+.togglebox{
+width:320px;
+margin:50px auto;
+position:relative;
+box-shadow:0 0 20px 9px #ff61241f;
+border-radius:30px;
+}	
+#btn{
+position:absolute;
+width:160px;
+height:100%;
+background:linear-gradient(to right,#0082e6,#fff);
+border-radius:30px;
+transition:.6s;
+}
+#admin{
+	left:200%;
+}
+#user{
+	left:20%;
+}
+.inputbox{
+	top:40%;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.field{
+	width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-bottom:1px solid ;
+	border-color:#0082e6;
+	border-bottom-color:#a4c3ea;
+	background:transparent;
+	font-size:25px;
+}
+#logbox2{
+	font-size:500%;
+	font-weight:3;
+	color:#1864c3;
+}
+#mainim{
+	height:40%;
+	width:50%;
+	top:30px;
+}
+.submitbtn{
+	width:85%;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:7% auto;
+	background:linear-gradient(to right,#0082e6,#fff);
+}
+#home{
+	background:url(main.png);
+	background-size:cover;
+}
